@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class JavaTest {
+	public static void main(String args[]) {
+	//define variables
+	int number;
+		
+	//Create scanner
+	Scanner myScanner = new Scanner(System.in);
+
+	System.out.println("Please input a positive integer");
+	number = myScanner.nextInt();	
+		
+	
+	for(int counter =2; counter < number; counter++)
+	{
+		if (number%counter == 0 ){
+			System.out.println(number+" is NOT prime!");
+			return;
+		}
+		
+	}//end for
+	{
+		System.out.println(number+" is prime!");
+		return;
+	}
+	}
+}
+
+

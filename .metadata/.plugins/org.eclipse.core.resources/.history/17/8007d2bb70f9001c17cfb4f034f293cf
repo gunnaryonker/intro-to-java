@@ -1,0 +1,54 @@
+
+/*
+ * Author: Gunnar Yonker
+ * Date: 7/1/2022
+ * File: Date.java
+ * Description: A class that contains month, day, and year information. Also contains a displayDate and calculateAge function
+ */
+public class Date {
+	private int birthMonth;
+	private int birthDay;
+	private int birthYear;
+	public Date(int bMonth, int bDay, int bYear)
+	{
+		setMonth(bMonth);
+		setDay(bDay);
+		setYear(bYear);
+	}
+	
+	//Define the methods
+	//Make sure month is between 1 and 12, if not set to 1
+	public void setMonth(int newMonth)
+	{
+		this.birthMonth = newMonth;
+	}
+	public int getMonth()
+	{
+		return birthMonth;
+	}
+	//Assume that day and year are entered correctly
+	public void setDay(int newDay)
+	{
+		this.birthDay = newDay;
+	}
+	public int getDay()
+	{
+		return birthDay;
+	}
+	public void setYear(int newYear)
+	{
+		this.birthYear = newYear;
+	}
+	public int getYear()
+	{
+		return birthYear;
+	}
+	
+	//Create a function to displayDate, that displays like this month/day/year
+	public void displayDate()
+	{
+		System.out.println(getMonth()+"/"+getDay()+"/"+getYear());
+	}
+	
+	
+}

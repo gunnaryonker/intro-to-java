@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*
+ * Author: Gunnar Yonker
+ * Date: 7/1/2022
+ * File: AgeCalculation.java
+ * Description: A main method that asks for users input of month, day, and year of one's birth date
+ * then asks for a future date input and tells how many years old and days old they will be
+ */
+public class AgeCalculation {
+	public static void main(String args[]) {
+		Scanner myScanner = new Scanner(System.in);
+				
+		//initialize each object variable
+		int bMonth = 0;
+		int bDay = 0;
+		int bYear = 0;
+		
+		//Ask for input of each variable
+		System.out.println("Birthday Month(1-12): ");
+		bMonth = myScanner.nextInt();
+		System.out.println("Birthday Day(1-31): ");
+		bDay = myScanner.nextInt();
+		System.out.println("Birthday Year: ");
+		bYear = myScanner.nextInt();
+		
+		//Create object using the input values
+		Date birthday1 = new Date(bMonth, bDay, bYear);
+		
+		//Call the displayDate function to show the information in the correct format
+		birthday1.displayDate();
+	}
+}

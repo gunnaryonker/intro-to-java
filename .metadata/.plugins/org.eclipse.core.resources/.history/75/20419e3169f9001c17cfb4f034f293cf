@@ -1,0 +1,20 @@
+public class Demo{
+     public static void main(String args[]){
+    	 double  num1, num2;
+    	 num1 = 21.5;
+    	 num2 = -24;
+    	 MinMax obj1 = new MinMax(num2, num1) ;
+
+    	 System.out.println("Minimum is" + obj1.min() ) ;
+    	 System.out.println("Maximum is"+ obj1.max() ) ;
+
+    	 double minimum= 0 ;
+    	 double maximum =0 ;
+    	 obj1.min() ;
+    	 obj1.max() ;
+
+    	 System.out.println("Minimum is" + minimum) ;
+    	 System.out.println("Maximum is" + maximum) ;
+
+     }
+}

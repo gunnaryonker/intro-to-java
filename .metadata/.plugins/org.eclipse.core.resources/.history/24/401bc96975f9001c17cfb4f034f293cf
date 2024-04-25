@@ -1,0 +1,85 @@
+
+/*
+ * Author: Gunnar Yonker
+ * Date: 7/1/2022
+ * File: Date.java
+ * Description: A class that contains month, day, and year information. Also contains a displayDate and calculateAge function
+ */
+public class Date {
+	private int birthMonth;
+	private int birthDay;
+	private int birthYear;
+	public Date(int bMonth, int bDay, int bYear)
+	{
+		setMonth(bMonth);
+		setDay(bDay);
+		setYear(bYear);
+	}
+	
+	//Define the methods
+	//Make sure month is between 1 and 12, if not set to 1
+	public int getMonth()
+	{
+		return birthMonth;
+	}
+	public void setMonth(int newMonth)
+	{
+		if(newMonth >= 1 && newMonth <= 12)
+		{
+			this.birthMonth = newMonth;
+		}
+		else
+		{
+			System.out.println("Invalid Month Input, Month Set to 1");
+			this.birthMonth = 1;
+		}
+	}
+	//Assume that day and year are entered correctly
+	public void setDay(int newDay)
+	{
+		this.birthDay = newDay;
+	}
+	public int getDay()
+	{
+		return birthDay;
+	}
+	public void setYear(int newYear)
+	{
+		this.birthYear = newYear;
+	}
+	public int getYear()
+	{
+		return birthYear;
+	}
+	
+	//Create a function to displayDate, that displays like this month/day/year
+	public void displayDate()
+	{
+		System.out.println(getMonth()+"/"+getDay()+"/"+getYear());
+	}
+	
+	//Create a function to calculateAge with three parameters that indicate a future date, month day year
+	//calculate ones age based on birthdate and also on future date
+	
+	public void calculateAge()
+	{
+		//Calculate current age based off of birthday
+		//Declare variables for years and days to print
+		int ageYears =0;
+		int ageDays =0;
+		//How many years old from current day
+		//birthday has occured this year
+		if(this.birthMonth <= 7)
+		{
+			ageYears = 2022 - getYear();
+		}
+		//birthday has not occured yet this year
+		else if(this.birthMonth > 7)
+		{
+			ageYears = 2021 - getYear();
+		}
+		
+		//Calculate number of days old
+		
+	}
+}

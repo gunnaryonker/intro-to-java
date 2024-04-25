@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class JavaTest {
+	public static void main(String args[]) {
+		//Create Scanner object
+		Scanner myScanner = new Scanner(System.in);
+			
+		//Declare variables
+		final int studentNumber = 20;
+		int scores[] = new int[studentNumber];
+			
+		//Use while loop to allow user keep trying till valid input
+		while(true)
+		{			
+	for(int i=0; i<scores.length; i++) {
+				System.out.println("Score for student "+(i+1));
+				scores[i] = myScanner.nextInt();
+				
+				if(scores[i]>=0 && scores[i] <= 100){
+					
+				}
+				//Otherwise continue the loop
+			} // end for
+		}//end while
+	}
+}
+

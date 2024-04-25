@@ -1,0 +1,28 @@
+
+public class MinMax {
+	private double  x,y;
+
+	public MinMax( double a, double b )
+	{
+		this.x = a ;
+		this.y = b ;
+	}
+	public double min() 
+	{
+		double minimum = 0 ;
+			if(x >y)
+				minimum = y ;
+			else
+				minimum = x ;	
+				return minimum	;
+	}
+	public double max() 
+	{
+		double maximum = 0 ;
+			if(x <y)
+				maximum = y ;
+			else
+				maximum = x ;	
+				return maximum;
+		}
+}

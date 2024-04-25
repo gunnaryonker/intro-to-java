@@ -1,0 +1,15 @@
+
+public class JavaTest {
+	public static void main(String args[]) {
+		//Declare variables
+		double number = 1;
+		double quotient = number/2;
+		while(quotient>=0.0001);
+		{	
+			quotient = quotient/2;
+			System.out.println(quotient);
+		}
+
+	}
+}
+

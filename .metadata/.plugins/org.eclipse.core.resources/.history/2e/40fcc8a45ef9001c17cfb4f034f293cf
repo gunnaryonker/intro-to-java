@@ -1,0 +1,13 @@
+
+public class JavaTest {
+	public static void main(String args[]) {
+		int value = 0;
+		do{
+			
+		}while(value < 100);
+		value += 10;
+		System.out.println(value);
+
+			}
+		}
+
